@@ -1,0 +1,443 @@
+/* Global */
+
+span, p, h1, h2, h3, h4 {
+	font-family: 'Lato', sans-serif;
+}
+
+span, p {
+	font-size: 1rem;
+	font-weight: lighter;
+}
+
+h1 {
+	font-size: 2.4rem;
+}
+
+h2 {
+	font-size: 2rem;
+	font-weight: bold;
+	color: rgb(14, 72, 77);
+
+}
+
+h3 {
+	font-size: 1.4rem;
+	color: rgb(14, 72, 77);
+}
+
+h4 {
+	font-size: 1.2rem;
+
+}
+
+
+.container {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.color-base {
+	background-color: rgb(54, 174, 204);
+	color: white;
+}
+
+
+.flex {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+}
+
+.top {
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	            -ms-grid-row-align: flex-start;
+	        align-items: flex-start;
+}
+
+.col {
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: column;
+	        flex-direction: column;
+}
+
+.row {
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+hr {
+	margin: 0;
+}
+
+.hide2 {
+	display: none;
+}
+
+@media only screen and (max-width: 550px) {
+
+	.hide {
+    	display: none;
+	}
+
+	.hide2 {
+		display: inline;
+	}
+
+	.reveal {
+		display: inline;
+	}
+	.course img, .course span, .course p {
+		display: none;
+	} 
+
+	.mob-col {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+
+}
+
+/* NAVBAR */ 
+
+header .pad24 {
+	margin: 0px auto;
+	padding: 0px 24px;
+	height: 64px;
+
+	-webkit-box-pack: justify;
+
+	    -ms-flex-pack: justify;
+
+	        justify-content: space-between;
+}
+
+header img {
+	display: inline-block;
+}
+
+.logo span{
+	font-family: 'Cinzel Decorative', cursive;
+}
+
+.logo span {
+	font-size: 32px;
+}
+
+.links span {
+	padding-left: 16px;
+}
+
+/* HERO */
+
+.hero {
+	-webkit-box-pack: start;
+	    -ms-flex-pack: start;
+	        justify-content: flex-start;
+}
+
+.hero img {
+	width: 60%;
+	padding: 32px 24px;
+}
+
+.hero-text {
+	width: 30%;
+}
+
+
+.hero-text h3 {
+	padding: 20px 0 30px 0;
+}
+
+.button {
+	padding: 8px 30px;
+	background-color: rgb(34, 109, 127);
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
+	transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.button:hover {
+	background-color: rgb(54, 174, 204);
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24);
+}
+
+@media only screen and (max-width: 550px) {
+
+	.hero img {
+		width: 100%;
+		padding: 0;
+	}
+
+	.hero-text {
+		width: 100%;
+	}
+
+	.hero-text h1 {
+		padding: 32px 16px;
+	}
+
+	.hero-text h3 {
+		padding: 0 16px 0 16px;
+	}
+
+	.button {
+		margin: 24px 16px 32px 16px;
+	}
+
+}
+
+/* KEY INFO */
+
+.article-main {
+	width: 60%;
+	padding: 0 24px;
+}
+
+.article-main img {
+	width: 100%;
+	padding: 32px 0;
+}
+
+.article-main h3 {
+	padding-bottom: 24px;
+}
+
+.article-main p {
+	padding-bottom: 32px;
+}
+
+
+.articles {
+	width: 40%;
+	padding-top: 16px;
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	            -ms-grid-row-align: flex-start;
+	        align-items: flex-start;
+	text-align: left;
+
+}
+
+.article img {
+	width: 35%;
+	padding: 16px;
+}
+
+.article-details {
+	padding-left: 16px;
+}
+
+.article-details p {
+	padding: 8px 0; 
+}
+
+@media only screen and (max-width: 550px) {
+
+	.articles, .article img, .article-details {
+		width: 100%;
+	}
+
+	.articles {
+		padding-top: 0;
+	}
+
+	.article img {
+		padding-top: 0;
+	}
+
+	.article {
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		padding: 16px;
+	}
+
+	.article-details {
+		margin-left: 16px;
+		padding: 0px;
+	}
+
+	.highlight {
+		padding-bottom: 32px;
+	}
+
+}
+
+
+/* COURSES */
+
+#learning {
+	background-color: rgba(222, 126, 25, 0.2);
+	text-align: center;
+}
+
+#learning h2 {
+	padding: 32px 0 16px 0;
+}
+
+.courses {
+	padding: 0 56px;
+}
+
+.course {
+	width: 50%;
+	text-align: left;
+	height: 250px;
+	margin: 16px;
+}
+
+.course img {
+	width: 100%;
+	-webkit-transition: opacity linear 0.1s;
+	transition: opacity linear 0.1s;
+}
+
+.course img:hover {
+	opacity: 0.4;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+}
+
+.course h4 {
+	padding: 16px 0 8px 16px;
+}
+
+.course p {
+	padding: 8px 0 24px 16px;
+}
+
+.course span {
+	padding-left: 16px;
+}
+
+#row2 {
+	padding-bottom: 16px
+}
+
+@media only screen and (max-width: 550px) {
+
+	#learning {
+		background-color: white;
+		border-top: solid grey 1px;
+	}
+
+	.courses {
+		padding: 0 16px;
+	}
+
+	.course {
+		width: 100%;
+		height: auto;
+		margin: 0 0 8px 0;
+	}
+
+	.course h4 {
+		background-color: rgba(222, 126, 25, 0.2);
+		padding: 16px 0 24px 16px;
+		-webkit-transition: background-color linear 0.1s;
+		transition: background-color linear 0.1s;
+	}
+
+	.course h4:hover {
+		background-color: rgba(153, 201, 212, 0.5);
+	}
+
+
+}
+
+/* THESIS EXHIBIT */
+
+#exhibits {
+	text-align: center;
+}
+
+#exhibits h2 {
+	padding: 32px 0;
+}
+
+.exhibit {
+	width: 60%;
+	padding-left: 24px;
+	text-align: left;
+}
+
+.exhibit video {
+	width: 100%;
+	padding-bottom: 24px;
+}
+
+.exhibit p {
+	padding: 8px 0 32px 0;
+}
+
+#articles2 {
+	padding-top: 0;
+	padding-left: 24px;
+}
+
+@media only screen and (min-width: 550px) {
+	.highlight {
+		background-color: rgba(153, 201, 212, 0.5);
+	}
+}
+
+
+@media only screen and (max-width: 550px) {
+	
+	#exhibits {
+		border-top: solid grey 1px;
+	}
+
+	#exhibits h2 {
+		padding: 32px 0 16px 0;
+	}
+
+	.exhibit {
+		width: 100%;
+		padding: 0;
+	}
+}
+
+
+/* FOOTER */
+
+#footer {
+	-webkit-box-pack: justify;
+	    -ms-flex-pack: justify;
+	        justify-content: space-between;
+	border-top: solid grey 1px;
+}
+
+#footer div, #footer span {
+	padding: 16px 24px 45px 24px;
+}
+
+@media only screen and (max-width: 550px) {
+
+	#footer {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: flex-start;
+	}
+
+	#footer span {
+	padding: 16px 0px 16px 16px;
+	}
+
+}
